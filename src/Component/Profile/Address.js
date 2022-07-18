@@ -1,8 +1,7 @@
 function CreateAddress() {
-  let 
+  let address = "56, Cité Bassatine, tunis";
 
-  return <p>{firstName + " " + lastName}</p>;
+  return <p>{address}</p>;
 }
-
 
 export default CreateAddress;

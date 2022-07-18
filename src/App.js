@@ -1,27 +1,33 @@
-import logo from "./logo.svg";
 import "./App.css";
-import bootstrap from "bootstrap";
+import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
+import CreateFullName from "./Component/Profile/FullName";
+import CreateProfilePhoto from "./Component/Profile/ProfilePhoto";
+import CreateAddress from "./Component/Profile/Address";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="header" style={{ padding: "40px" }}>
+        <CreateProfilePhoto />
+      </div>
+      <div className="body">
+        <h2>
+          <CreateFullName />
+        </h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <CreateAddress />
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          class="btn btn-info"
+          href="#"
+          role="button"
+          style={{ border: "3px solid #000" }}
         >
-          Learn React
+          More Informations
         </a>
-      </header>
+      </div>
     </div>
   );
 }
