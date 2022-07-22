@@ -9,22 +9,17 @@ import CreateAddress from "./Component/Profile/Address";
 function App() {
   return (
     <div className="App">
-      <div className="header" style={{ padding: "40px" }}>
+      <div className="header">
         <CreateProfilePhoto />
       </div>
-      <div className="body">
+      <div className="blog_post">
         <h2>
           <CreateFullName />
         </h2>
         <p>
           <CreateAddress />
         </p>
-        <a
-          class="btn btn-info"
-          href="#"
-          role="button"
-          style={{ border: "3px solid #000" }}
-        >
+        <a class="btn_primary" href="#" role="button">
           More Informations
         </a>
       </div>
